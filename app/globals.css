@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button {
+    @apply cursor-pointer text-xs md:text-sm p-2 bg-gradient-to-b from-yellow-200 to-yellow-400 rounded-md shadow-md hover:shadow-lg hover:from-yellow-400 hover:to-yellow-200 border border-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 active:from-yellow-500 font-semibold;
+  }
+
+  .button-disabled{
+    /* define a best text color in this case */
+    @apply cursor-not-allowed text-xs text-gray-500 md:text-sm p-2 bg-gradient-to-b from-gray-200 to-gray-400 rounded-md shadow-md border-gray-300 focus:outline-none  mt-2 font-semibold;
+  }
+}
