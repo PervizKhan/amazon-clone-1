@@ -16,7 +16,6 @@ const Header = () => {
   const { data: session } = useSession();
   const router = useRouter();
   const items = useSelector(selectItems);
-  console.log(items);
   return (
     <header>
       {/* top nav */}
